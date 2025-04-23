@@ -70,4 +70,11 @@ const loggin = async (req, res) => {
     }
 };
 
-module.exports = { signup, loggin };
+
+
+
+const getData = (req,res) => {
+    const data = req.body;
+    return res.json(data)
+}
+module.exports = { signup, loggin, getData };
